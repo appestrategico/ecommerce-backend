@@ -2,7 +2,7 @@
 
 Este proyecto es una plataforma de comercio electrónico simplificada implementada con Node.js, Express y TypeScript. La aplicación proporciona servicios de catálogo de productos y gestión de órdenes, y está documentada utilizando Swagger.
 
-## Requisitos Previos
+## Requisitos Previos 
 
 - Node.js (versión 12 o superior)
 - MongoDB (en funcionamiento localmente o en un servicio de nube)
