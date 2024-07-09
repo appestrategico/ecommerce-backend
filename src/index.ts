@@ -5,12 +5,14 @@ import mongoose, { Schema, Document } from 'mongoose';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Configuración de MongoDB
-mongoose.connect('mongodb://localhost:27017/ecommerce', {
-   useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// Cadena de conexión obtenida desde MongoDB Atlas
+const uri = 'mongodb+srv://appestrategico:x29am1T5FHenO2eI@cluster.mongodb.net/appestrategico@admin';
 
+// Configurar conexión a MongoDB
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Error de conexión a MongoDB:'));
